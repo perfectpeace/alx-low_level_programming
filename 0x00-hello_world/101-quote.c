@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - write to stdout
  * Return 1
