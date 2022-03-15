@@ -11,7 +11,7 @@ int main(void)
 	for (number = 48; number <= 57; number++)
 	{
 	putchar(number);
-	if (ch == 57)
+	if (number == 57)
 	{
 	continue;
 	}
@@ -21,7 +21,3 @@ int main(void)
 	putchar(10);
 	return (0);
 }
-
-
-
-		
