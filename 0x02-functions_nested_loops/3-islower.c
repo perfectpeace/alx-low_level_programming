@@ -7,7 +7,7 @@
  *
  * Return: 1 for lowercase. 0 otherwise.
  */
-int _islower(int x)
+int _islower(int c)
 {
-return (x >= 'a' && x <= 'z');
+return (c >= 'a' && c <= 'z');
 }
