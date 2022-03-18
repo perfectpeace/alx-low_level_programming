@@ -15,7 +15,7 @@ void print_number(int n)
 		_putchar('-');
 	} else
 	{
-		n = n1;
+		 n1 = n;
 	}
 
 	if (n1 / 10)
