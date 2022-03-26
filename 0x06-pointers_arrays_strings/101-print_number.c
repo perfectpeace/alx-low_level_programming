@@ -28,7 +28,7 @@ void print_number(int n)
 			n = n % adjustor;
 			adjustor = adjustor / 10;
 		}
+	}
 		else
 			_putchar('0');
-	}
 }
