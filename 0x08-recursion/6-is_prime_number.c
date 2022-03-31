@@ -1,26 +1,41 @@
 #include "main.h"
 
-int tmp_prime(int n, int i);
-
+/**
+ * sqtRecursive - computes square root recursively
+ * @n: given number
+ * @m: comparison number
+ * Return: 1 if not found sqrroot, else sqrroot
+ **/
+int sqtRecursive(int n, int m)
+{
+	if (n <= 0)
+		return (-1);
+	if (n * n == m)
+		return (n);
+	return (sqtRecursive(n - 1, m));
+}
+/**
+ * _sqrt_recursion - finds the natural square root of a number
+ * @n: given number
+ * Return: square root of n or -1
+ **/
+int _sqrt_recursion(int n)
+{
+	if (n == 1)
+		return (1);
+	return (sqtRecursive(n / 2, n));
+}
 /**
  * divisors - number is prime?
  * @n: integer params
  * @m: integer params
  * Return: boolean
  */
-
-int divisors(int n, int m)
+int is_prime_number(int n)
 {
-	if (m % n == 0)
-	{
+	if (n <= 1 || _sqrt_recursion(n) >= 1)
 		return (0);
-	}
-	else if (m / 2 > n)
-	{
-		return (divisors(n + 2, m));
-	}
-	else
-	{
+	if (_sqrt_recursion(n) == -1)
 		return (1);
-	}
+	return (_sqrt_recursion(n));
 }
