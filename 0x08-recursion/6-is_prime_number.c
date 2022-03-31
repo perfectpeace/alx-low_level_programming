@@ -30,7 +30,7 @@ int _sqrt_recursion(int n)
  * @n: integer params
  * @m: integer params
  * Return: boolean
- */
+ **/
 int is_prime_number(int n)
 {
 	if (n <= 1 || _sqrt_recursion(n) >= 1)
