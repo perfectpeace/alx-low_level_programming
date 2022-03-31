@@ -26,10 +26,9 @@ int _sqrt_recursion(int n)
 	return (sqtRecursive(n / 2, n));
 }
 /**
- * divisors - number is prime?
- * @n: integer params
- * @m: integer params
- * Return: boolean
+ * is_prime_number - checks if a given number is prime
+ * @n: given number
+ * Return: 1 if number is prime else 0
  **/
 int is_prime_number(int n)
 {
