@@ -5,9 +5,10 @@
  * @str: pointer to string
  * Return: pointer
  */
+
 char *_strdup(char *str)
 {
-	char *s
+	char *s;
 	int i = 0, j;
 
 	if (!str)
