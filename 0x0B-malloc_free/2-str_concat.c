@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
 	while (s1[i] != '\0')
 	{
 		strDup[i] = s1[i];
-		I++;
+		i++;
 	}
 	while (s2[j] != '\0')
 	{
