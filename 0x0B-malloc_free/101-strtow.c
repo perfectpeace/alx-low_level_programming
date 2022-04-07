@@ -6,7 +6,7 @@
  * @s: string to evaluate
  * Return: number of words
  */
-nt count_word(char *s)
+int count_word(char *s)
 {
 	int flag, c, w;
 
@@ -73,5 +73,4 @@ ar **strtow(char *str)
 	matrix[k] = NULL;
 
 	return (matrix);
-
 }
